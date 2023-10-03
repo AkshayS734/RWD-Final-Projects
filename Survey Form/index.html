@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thanks for your time to help us in improving our platform</p>
+    <form id="survey-form" method="send" action="mailto:akshayshukla734@gmail.com">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your Name" required/></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required/></label>
+        <label for="age" id="number-label">Age <input id="number" type="number" min="13" max="120" placeholder="Enter your Age"></label>
+      </fieldset>
+      <fieldset>
+        <p>What are your interests?</p>
+        <label><input type="checkbox" value="front-end" class="inline"/> Front-end Development</label>
+        <label><input type="checkbox" value="back-end" class="inline"/> Back-end Development</label>
+        <label><input type="checkbox" value="dsa" class="inline"/> Data structure and Algorithms</label>
+        <label><input type="checkbox" value="open-source" class="inline"/> Open Source Community</label>
+        <label><input type="checkbox" value="android" class="inline"/> Android Development</label>
+        <p>Which option describes your current role?</p>
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Job</option>
+          <option value="don'tprefer">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>Would you recommend our platform to your friend?</p>
+        <label><input type="radio" name="recommend" value="definitely" class="inline"/>Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe" class="inline"/>Maybe</label>
+        <label><input type="radio" name="recommend" value="unsure" class="inline"/>Not Sure</label>
+        <label for="suggestions">Any comments or suggestions? <textarea type="textarea" id="suggestions">
+          </textarea>
+        </label>
+      </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    
+  </body>
+</html>

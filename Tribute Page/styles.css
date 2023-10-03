@@ -1,0 +1,25 @@
+.bold{
+    font-weight:600;
+}
+body{
+    background-color:#fec5bb;
+    text-align:center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height:2;
+}
+.time-line{
+    text-align:left;
+    margin:0 20%
+}
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+#img-div{
+    align-items:center;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
